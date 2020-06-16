@@ -1,8 +1,8 @@
 #! /bin/bash
 shopt -s extglob
-
-pin='A400088'
-pattern="!/[A-Z]^([0-9]{6})$"
+echo "Enter pin"
+read pin
+pattern="^[A-Za-z._?$@/]{0,0}([0-9]{6})$"
 if [[ $pin =~ $pattern ]]
 then
 	echo "Valid Pin Code"
