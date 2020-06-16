@@ -1,7 +1,6 @@
 #! /bin/bash
 shopt -s extglob
-echo "Enter the pin code "
-read pin
+pin="400088B"
 pattern="^([0-9]{6})$"
 if [[ $pin =~ $pattern ]]
 then
