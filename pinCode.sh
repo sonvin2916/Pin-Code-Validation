@@ -1,7 +1,8 @@
 #! /bin/bash
 shopt -s extglob
-pin='400 088'
-pattern="^([0-9]){3}[[:space:]][0-9]{3}$"
+echo "Enter pin code"
+read pin
+pattern="^([0-9]){3}[[:space:]]{0,1}[0-9]{3}$"
 if [[ $pin =~ $pattern ]]
 then
         echo "Valid Pin Code"
